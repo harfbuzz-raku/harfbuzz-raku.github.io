@@ -31,8 +31,7 @@ Base HarfBuzz bindings. This distribution includes [HarfBuzz::Shaper](https://ha
 may be enough to perform basic shaping.
 
 ### [HarfBuzz::Font::FreeType](https://harfbuzz-raku.github.io/HarfBuzz-Font-FreeType-raku/)
-FreeType integration (via the Raku [Font::FreeType](https://pdf-raku.github.io/Font-FreeType-raku/) module. This
-module may me useful when shaping from a [Font::FreeType::Face](https://harfbuzz-raku.github.io/Font-FreeType-raku/Face) object.
+FreeType integration (via the Raku [Font::FreeType](https://pdf-raku.github.io/Font-FreeType-raku/) module.
 
 Note that HarfBuzz can load OpenType and TrueType formatted fonts directly. The FreeType integration most likely to be useful for
 other formats, that can be loaded by [Font::FreeType](https://harfbuzz-raku.github.io/Font-FreeType-raku/).
@@ -40,7 +39,7 @@ other formats, that can be loaded by [Font::FreeType](https://harfbuzz-raku.gith
 ### [HarfBuzz::Shaper::Cairo](https://harfbuzz-raku.github.io/HarfBuzz-Shaper-Cairo-raku)
 HarfBuzz/Cairo integration for glyph positioning and display.
 
-### [HarfBuzz::Subset::Cairo](https://harfbuzz-raku.github.io/HarfBuzz-Subset-raku)
+### [HarfBuzz::Subset](https://harfbuzz-raku.github.io/HarfBuzz-Subset-raku)
 Binding to HarfBuzz's font-subsetting capabilities.
 
 
