@@ -11,11 +11,13 @@ At this stage, it is recommended that the HarfBuzz library is built from source,
 
 ## Installation
 ```
+wget -q https://github.com/harfbuzz/harfbuzz/archive/2.7.4.tar.gz
 tar xvzf 2.7.4.tar.gz
 cd harfbuzz-2.7.4
 ./autogen.sh
 make
 sudo make install
+sudo ldconfig
 ```
 
 The various HarfBuzz Raku modules can then be installed, using an appropriate module manager, such as `zef`. For example:
@@ -33,8 +35,8 @@ may be enough to perform basic shaping.
 ### [HarfBuzz::Font::FreeType](https://harfbuzz-raku.github.io/HarfBuzz-Font-FreeType-raku/)
 FreeType integration (via the Raku [Font::FreeType](https://pdf-raku.github.io/Font-FreeType-raku/) module.
 
-Note that HarfBuzz can load OpenType and TrueType formatted fonts directly. The FreeType integration most likely to be useful for
-other formats, that can be loaded by [Font::FreeType](https://harfbuzz-raku.github.io/Font-FreeType-raku/).
+Note that HarfBuzz can load OpenType and TrueType format fonts directly. The FreeType integration most likely to be useful for
+other font formats, that can be loaded by [Font::FreeType](https://harfbuzz-raku.github.io/Font-FreeType-raku/).
 
 ### [HarfBuzz::Shaper::Cairo](https://harfbuzz-raku.github.io/HarfBuzz-Shaper-Cairo-raku)
 HarfBuzz/Cairo integration for glyph positioning and display.
