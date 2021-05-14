@@ -4,7 +4,7 @@ multi sub resolve-class(@path ( 'HarfBuzz', 'Subset', *@)) { %( :repo<HarfBuzz-S
 multi sub resolve-class(@ ( 'HarfBuzz', 'Shaper', 'Cairo', *@)) { %( :repo<HarfBuzz-Shaper-Cairo-raku> ) }
 multi sub resolve-class(@ ( 'HarfBuzz', 'Font', 'FreeType', *@)) { %( :repo<HarfBuzz-Font-FreeType-raku> ) }
 multi sub resolve-class(@path ( 'Font', 'FreeType', *@)) { %( :repo<Font-FreeType-raku>, :@path, :doc<https://pdf-raku.github.io> ) }
-multi sub resolve-class(@ ( 'HarfBuzz', *@path)) { %( :repo<HarfBuzz-raku>, :@path ) }
+multi sub resolve-class(@path ( 'HarfBuzz', *@)) { %( :repo<HarfBuzz-raku>, :@path ) }
 multi sub resolve-class(@p) { fail "unable to resolve class @p[]" }
 
 sub link-to-url(Str() $class-name) {
