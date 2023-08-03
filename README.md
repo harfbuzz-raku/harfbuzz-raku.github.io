@@ -7,19 +7,18 @@ library and its functionality. In particular
 - Text Shaping - The selection and positioning of glyphs to display text
 - Font Subsetting - Reduction of a font to the set of used glyphs, e.g. for embedding in a PDF or for use as a web-page font.
 
-At this stage, it is recommended that the HarfBuzz library is built from source, to get an up-to-date version that includes the HarfBuzz font subsetting library.
-
 ## Installation
 
-On Debian 12+:
+The minimum supported version of harfbuzz is 3.0.0 for HarfBuzz::Subset, or 2.7.4 for other Raku HarfBuzz modules. 
+
+harbuzz 3.0.0+ is packaged on Debian 12+. Earlier Debian versions and other platforms may need to build from source.
 
 ```
 $ cat /etc/debian_version # 12.0 or better
 $ sudo apt install libharfbuzz-dev
 ```
 
-harfbuzz 3.0 is required. On other platforms, the library may need
-to be built from source:
+To build from source:
 ```
 wget -q https://github.com/harfbuzz/harfbuzz/archive/8.1.1.tar.gz
 tar xvzf 8.1.1.tar.gz
