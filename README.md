@@ -10,10 +10,20 @@ library and its functionality. In particular
 At this stage, it is recommended that the HarfBuzz library is built from source, to get an up-to-date version that includes the HarfBuzz font subsetting library.
 
 ## Installation
+
+On Debian 12+:
+
 ```
-wget -q https://github.com/harfbuzz/harfbuzz/archive/2.7.4.tar.gz
-tar xvzf 2.7.4.tar.gz
-cd harfbuzz-2.7.4
+$ cat /etc/debian_version # 12.0 or better
+$ sudo apt install libharfbuzz-dev
+```
+
+harfbuzz 3.0 is required. On other platforms, the library may need
+to be built from source:
+```
+wget -q https://github.com/harfbuzz/harfbuzz/archive/8.1.1.tar.gz
+tar xvzf 8.1.1.tar.gz
+cd harfbuzz-8.1.1
 ./autogen.sh
 make
 sudo make install
